@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ES6 Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1>ES6 Calculator</h1>
+
+<div id="calculator" class="calculator">
+    <div id="screen" class="screen">0</div>
+
+    <div id="keys" class="keys">
+        <button onclick=button("MC") class="special" data-ops="MC">MC</button>
+        <button onclick=button("MR") class="special" data-ops="MR">MR</button>
+        <button onclick=button("MPLUS") class="special" data-ops="MPLUS">M+</button>
+        <button onclick=button("MMINUS") class="special" data-ops="MMINUS">M-</button>
+
+        <button onclick=button("percemt") class="ops" data-ops="%">%</button>
+        <button onclick=button("sqrt") class="ops" data-ops="sqrt">&radic;</button>
+        <button onclick=button("square") class="ops" data-ops="square">x<sup>2</sup></button>
+        <button onclick=button("inverse") class="ops" data-ops="inverse">1/x</button>
+
+        <button onclick=button("CE") class="special" data-num="CE">CE</button>
+        <button onclick=button("C") class="special" data-num="C">C</button>
+        <button onclick=button("BKSP") class="special" data-num="BKSP">&#9003;</button>
+        <button onclick=button("divide") class="ops" data-num="divide">&divide;</button>
+
+        <button onclick=button(7) class="num" data-num="7">7</button>
+        <button onclick=button(8) class="num" data-num="8">8</button>
+        <button onclick=button(9) class="num" data-num="9">9</button>
+        <button onclick=button("times") class="ops" data-ops="times">X</button>
+
+
+        <button onclick=button(4) class="num" data-num="4">4</button>
+        <button onclick=button(5) class="num" data-num="5">5</button>
+        <button onclick=button(6) class="num" data-num="6">6</button>
+        <button onclick=button("minus") class="ops" data-ops="minus">-</button>
+
+        <button onclick=button(1) class="num" data-num="1">1</button>
+        <button onclick=button(2) class="num" data-num="2">2</button>
+        <button onclick=button(3) class="num" data-num="3">3</button>
+        <button onclick=button("plus") class="ops" data-ops="plus">+</button>
+
+
+        <button onclick=button("plusminus") class="num" data-num="plusminus">&plusmn;</button>
+        <button onclick=button(0) class="num" data-num="0">0</button>
+        <button onclick=button(".") class="num" data-num=".">.</button>
+        <button onclick=button("equal") class="equal" data-ops="equal" data-result="">=</button>
+
+    </div>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
